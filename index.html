@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Mohini</title>
+<style>
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid Salmon;
+    background-color: LightSalmon;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+    width: 308px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: Salmon;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: Salmon;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid Salmon;
+    background-color: Salmon;
+    border-top: none;
+}
+
+h1 {
+  font-size: 24pt;
+  margin-left: 500px;
+  color: Crimson;
+}
+
+h2 {
+  font-size: 18pt;
+  color: Crimson;
+  background-color: inherit;
+}
+
+p {
+  font-size: 13pt;
+  background-color: inherit;
+}
+
+* {
+  background-color: LavenderBlush;
+  font-family: Helvetica;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
+  background-color: inherit;
+}
+
+.photo {
+  background-color: inherit;
+}
+
+.photostream {
+  width: 60%;
+  length: 60%;
+}
+
+.photostream2 {
+  width:30%;
+  height:30%;
+}
+
+.photostream3 {
+  width: 55%;
+  length: 55%;
+}
+
+#number-fact {
+  background-color: inherit;
+}
+</style>
+
+</head>
+
+<body>
+  <script>
+    alert("Welcome! Click on the tabs to navigate. If you see a picture, hover over and then click on it to cycle through!");
+  </script>
+  <h1>Mohini Shanker</h1>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'earlyLife')">Early Life</button>
+    <button class="tablinks" onclick="openTab(event, 'Family')">Family</button>
+    <button class="tablinks" onclick="openTab(event, 'Schooling')">Schooling</button>
+    <button class="tablinks" onclick="openTab(event, 'personalLife')">Personal Life</button>
+  </div>
+
+  <div id="earlyLife" class="tabcontent">
+    <p>Mohini was born in Downers Grove, Illinois, on October 26, 2001.</p>
+    <p>She spent much of her childhood between Illinois and Chennai, India, with her grandparents and aunt/uncle. Her cousins, who lived down the street, were also a formative part of her childhood, and she treasures them to this day.
+    </p>
+    <div class="photo">
+      <img class="photostream" onclick="plusDivs(+1)" alt="A playground in Bamboola Playschool in RA Puram, Chennai." title="A playground in Bamboola Playschool in RA Puram, Chennai." src="https://www.edustoke.com/assets/uploads-new/bamboola-play-school-1501845962-3.png">
+      <img class="photostream" onclick="plusDivs(+1)" alt="Cream Centre, a restaurant in RA Puram, Chennai." title="Cream Centre, a restaurant in RA Puram, Chennai." src="https://i2.wp.com/files.hungryforever.com/wp-content/uploads/2016/12/02164803/cream-center.jpeg">
+    </div>
+  </div>
+
+  <div id="Family" class="tabcontent">
+    <p>Mohini was born to Ravi and Vidhya, and was thankfully not named by either of them, but rather, her sister, Shreya, who knew in her heart that Mohini was a much better name than either Katyayani or Thanvi.</p>
+    <div class="photo">
+      <img class="photostream2" onclick="plusDivs2(+1)" alt="The name Mohini in Sanskrit." title="The name Mohini in Sanskrit." src="file:///C:/Users/Girls%20Who%20Code/Pictures/screenshots/mohini.PNG">
+      <img class="photostream2" onclick="plusDivs2(+1)" alt="The name Thanvi in Sanskrit." title="The name Thanvi in Sanskrit." src="file:///C:/Users/Girls%20Who%20Code/Pictures/screenshots/thanvi.PNG">
+      <img class="photostream2" onclick="plusDivs2(+1)" alt="The name Katyayani in Sanskrit." title="The name Katyayani in Sanskrit." src="file:///C:/Users/Girls%20Who%20Code/Pictures/screenshots/katyayani.PNG">
+    </div>
+  </div>
+
+  <div id="Schooling" class="tabcontent">
+    <h2>First...</h2>
+    <p>Did you know? <span id="number-fact"></span> 7 also happens to be Mohini's favorite number.</p>
+    <p>Mohini has been in D204 her whole school life, and is currently at Waubonsie Valley. She is about to suffer through her junior year.</p>
+    <p>Mohini has been involved with her school's robotics team, GEMS, JSA, as well as Aurora's Youth Council.</p>
+    <img alt="Waubonsie Valley High School." title="Waubonsie Valley High School." src="file:///C:/Users/Girls%20Who%20Code/Pictures/waubonsie.jpg">
+  </div>
+
+  <div id="personalLife" class="tabcontent">
+    <p>In her free time, Mohini enjoys playing Vainglory, Pokemon Mystery Dungeon: Explorers of Sky, and Animal Crossing: New Leaf.</p>
+    <p>In addition, she plays the cello and has learned carnatic music since the age of four.</p>
+    <div class="photo">
+      <img class="photostream3" onclick="plusDivs3(+1)" alt="Vainglory, a 5v5 MOBA" title="Vainglory, a 5v5 MOBA" src="https://images-na.ssl-images-amazon.com/images/I/81CcSwugrWL._SY355_.png">
+      <img class="photostream3" onclick="plusDivs3(+1)" alt="PMD2" title="PMD2!" src="https://pm1.narvii.com/6275/7345d798d9f7c47e95fc206d0283e3241a476f5e_hq.jpg">
+      <img class="photostream3" onclick="plusDivs3(+1)" alt="Animal Crossing: New Leaf" title="Animal Crossing: New Leaf" src="https://www.thonky.com/game-icons/new-leaf-full-gb.png">
+      <img class="photostream3" onclick="plusDivs3(+1)" alt="A cello!" title="A cello!" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Cello_front_side.png">
+      <img class="photostream3" onclick="plusDivs3(+1)" alt="The trinity of carnatic composers: Thyagaraja, Dikshitar, and Shyama Shastri." title="The trinity of carnatic composers: Thyagaraja, Dikshitar, and Shyama Shastri." src="https://solihullcarnatic.files.wordpress.com/2016/09/thyagaraja.jpg?w=376&h=197">
+    </div>
+  </div>
+
+  <script>
+  function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("photostream");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+
+  var slideIndex2 = 1;
+  showDivs2(slideIndex2);
+
+  function plusDivs2(n) {
+    showDivs2(slideIndex2 += n);
+  }
+
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("photostream2");
+    if (n > x.length) {slideIndex2 = 1}
+    if (n < 1) {slideIndex2 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex2-1].style.display = "block";
+  }
+
+  var slideIndex3 = 1;
+  showDivs3(slideIndex3);
+
+  function plusDivs3(n) {
+    showDivs3(slideIndex3 += n);
+  }
+
+  function showDivs3(n) {
+    var i;
+    var x = document.getElementsByClassName("photostream3");
+    if (n > x.length) {slideIndex3 = 1}
+    if (n < 1) {slideIndex3 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex3-1].style.display = "block";
+  }
+
+
+
+  function showNumber(str) {
+    document.getElementById('number-fact').innerText = str;
+  }
+
+  (function() {
+    var scriptTag = document.createElement('script');
+    scriptTag.async = true;
+    scriptTag.src = "http://numbersapi.com/7/math?callback=showNumber";
+    document.body.appendChild(scriptTag);
+  })();
+
+  </script>
+</body>
+
+</html>
